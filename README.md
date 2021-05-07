@@ -1,7 +1,6 @@
-# Xamarin VIBE
-> Solução mobile para Android, iOS e UWP.
+# NOME DA SOLUÇÃO
+> Descrição da Solução.
 #### Cores
-- Azul Escuro: `#0016a6`
-- Azul Claro: `#45ffda`
-- Cinza Escuro: `#1b1b1b`
-- Branco: `#ffffff`
+- Cor 1: `Hexadecimal 1`
+- Cor 2: `Hexadecimal 2`
+- Cor 3: `Hexadecimal 3`
