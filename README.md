@@ -1,4 +1,4 @@
-# NOME DA SOLUÇÃO
+# Nome da Solução
 > Descrição da Solução.
 #### Cores
 - Cor 1: `Hexadecimal 1`
