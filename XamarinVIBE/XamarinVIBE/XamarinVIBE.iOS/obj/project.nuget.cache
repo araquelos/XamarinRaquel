@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "LhQ7zY/+ZVvyoYhNslIpKK8WNgmBKvjlKlAYy4aK7Bn4IGNLPzzg3LNrAVNsbC3h3/Rzk5j4VWb9oe9mfGfD/w==",
+  "success": true,
+  "projectFilePath": "C:\\XamarinRaquel\\XamarinVIBE\\XamarinVIBE\\XamarinVIBE.iOS\\XamarinVIBE.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\raque\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

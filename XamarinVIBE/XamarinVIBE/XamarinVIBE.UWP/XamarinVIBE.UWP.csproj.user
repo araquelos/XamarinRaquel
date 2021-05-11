@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\XamarinRaquel\Imagens\Icone.png</Source>
+    <SmallTileSource>C:\XamarinRaquel\Imagens\Icone.png</SmallTileSource>
+    <MediumTileSource>C:\XamarinRaquel\Imagens\Icone.png</MediumTileSource>
+    <WideTileSource>C:\XamarinRaquel\Imagens\Icone.png</WideTileSource>
+    <LargeTileSource>C:\XamarinRaquel\Imagens\Icone.png</LargeTileSource>
+    <AppIconSource>C:\XamarinRaquel\Imagens\Icone.png</AppIconSource>
+    <SplashScreenSource>C:\XamarinRaquel\Imagens\Icone.png</SplashScreenSource>
+    <PackageLogoSource>C:\XamarinRaquel\Imagens\Icone.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

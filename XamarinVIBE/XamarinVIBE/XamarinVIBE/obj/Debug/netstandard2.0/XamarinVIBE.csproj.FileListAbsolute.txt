@@ -1,0 +1,14 @@
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\bin\Debug\netstandard2.0\XamarinVIBE.deps.json
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\bin\Debug\netstandard2.0\XamarinVIBE.dll
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\bin\Debug\netstandard2.0\ref\XamarinVIBE.dll
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\bin\Debug\netstandard2.0\XamarinVIBE.pdb
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.csprojAssemblyReference.cache
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.AssemblyInfoInputs.cache
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.AssemblyInfo.cs
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.csproj.CoreCompileInputs.cache
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamlC.stamp
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.dll
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\ref\XamarinVIBE.dll
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.pdb
