@@ -38,6 +38,9 @@
 4. Em `App.iOS`, abra o arquivo `Info.plist`.
 5. Na aba `Visual Assets`, altere o source em `App Icones` para `Icone`.
 ### UWP
+1. Em `App.UWP`, abra o arquivo `Package.appxmanifest`.
+2. Na aba `Ativos Visuais`, importe a imagem do icone no campo `Origem`.
+3. Na aba `Ativos Visuais`, mude a cor de fundo no campo de `Tela de fundo da tela inicial`, e clique em `Gerar`.
 
 ## SplashScreens
 ### Android
