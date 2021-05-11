@@ -36,5 +36,49 @@
 
 ## SplashScreens
 ### Android
+1. Em `App.Android` crie a activity `SplashActivity.cs`, e coloque nele o seguinte código:
+```html
+    [Activity(Theme = "@style/MainTheme.Splash", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class SplashActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            StartActivity(typeof(MainActivity));
+            Finish();
+
+            // Disable activity slide-in animation
+            OverridePendingTransition(0, 0);
+        }
+    }
+```
+2. Em `App.Android`, abra o arquivo `MainActivity.cs`, e remova a linha `MainLauncher = true`.
+3. Em `App.Android` -> `Resources` -> `values`, abra o arquivo `styles.xml`, e inclua nele o seguinte código:
+```html
+  <style name="MainTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splashscreen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
+```
+4. Em `App.Android` -> `Resources` cole as novas pastas `drawable`.
+5. Em `App.Android` -> `Resources` -> `drawable`, crie o xml `splashscreen.xml`, e inclua nele o seguinte código:
+```html
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <color android:color="@color/ic_launcher_background"/>
+  </item>
+  <item>
+    <bitmap
+        android:src="@drawable/logo"
+        android:tileMode="disabled"
+        android:gravity="center"/>
+  </item>
+</layer-list>
+``` 
+6. Ainda em `App.Android` -> `Resources` -> `drawable`, edite o xml `splashscreen.xml` para incluir a imagem de splashscreen na linha `android:src="@drawable/SplashScreen"`. 
 ### iOS
 ### UWP
