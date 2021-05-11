@@ -32,6 +32,11 @@
 7. Botão da direita em `App.Android`, clique em `Propriedades`.
 8. Na aba `Android Manifest`, altere o ícone da aplicação em `Application icon` para `@mipmap/ic_launcher`.
 ### iOS
+1. Em `App.iOS` -> `Asset Catalogs` -> `Assets`, exclua a atual biblioteca de ícones `AppIcon`.
+2. Em `App.iOS` -> `Asset Catalogs` -> `Assets`, adicione uma nova biblioteca de ícones em `App Icons` -> `Add App Icon`.
+3. Altere o nome da nova biblioteca para `Icone`, e adicione as respectivas imagens ao lugar correspondente aos seus respectivos tamanhos.
+4. Em `App.iOS`, abra o arquivo `Info.plist`.
+5. Na aba `Visual Assets`, altere o source em `App Icones` para `Icone`.
 ### UWP
 
 ## SplashScreens
@@ -81,4 +86,5 @@
 ``` 
 6. Ainda em `App.Android` -> `Resources` -> `drawable`, edite o xml `splashscreen.xml` para incluir a imagem de splashscreen na linha `android:src="@drawable/SplashScreen"`. 
 ### iOS
+1. Precisa de um Mac :(
 ### UWP
