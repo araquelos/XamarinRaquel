@@ -9,8 +9,8 @@ namespace XamarinVIBE
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            //Primeira Página - Menu Lateral
+            MainPage = new XamarinVIBE.MenuLateral();
         }
 
         protected override void OnStart()
