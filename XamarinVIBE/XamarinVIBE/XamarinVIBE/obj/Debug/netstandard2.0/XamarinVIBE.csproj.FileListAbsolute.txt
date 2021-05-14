@@ -12,9 +12,4 @@ C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Xa
 C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\ref\XamarinVIBE.dll
 C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\XamarinVIBE.pdb
 C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\MenuLateral.xaml.g.cs
-C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Pagina01.xaml.g.cs
-C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Pagina02.xaml.g.cs
-C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Pagina03.xaml.g.cs
-C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Pagina04.xaml.g.cs
-C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Pagina05.xaml.g.cs
-C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Pagina06.xaml.g.cs
+C:\XamarinRaquel\XamarinVIBE\XamarinVIBE\XamarinVIBE\obj\Debug\netstandard2.0\Paginas\Institucional\NossaVibe.xaml.g.cs

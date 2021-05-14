@@ -11,6 +11,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Recursos\Fontes\font-awesome.otf" />
+    <None Remove="Recursos\Fontes\Rubik-Bold.ttf" />
+    <None Remove="Recursos\Fontes\Rubik-Light.ttf" />
+    <None Remove="Recursos\Fontes\Rubik-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Recursos\Fontes\font-awesome.otf" />
+    <EmbeddedResource Include="Recursos\Fontes\Rubik-Bold.ttf" />
+    <EmbeddedResource Include="Recursos\Fontes\Rubik-Light.ttf" />
+    <EmbeddedResource Include="Recursos\Fontes\Rubik-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
@@ -19,23 +33,12 @@
     <EmbeddedResource Update="MenuLateral.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pagina01.xaml">
+    <EmbeddedResource Update="Paginas\Institucional\NossaVibe.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pagina02.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pagina03.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pagina04.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pagina05.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Pagina06.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Paginas\TransformacaoDigital\" />
   </ItemGroup>
 </Project>

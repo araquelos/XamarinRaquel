@@ -1,19 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                  xmlns:local="clr-namespace:XamarinVIBE.Paginas"
+                  xmlns:local="clr-namespace:XamarinVIBE.Paginas.Institucional"
                   x:Class="XamarinVIBE.MenuLateral">
 
     <!-- Menu -->
     <FlyoutPage.Flyout>
-        <ContentPage Title="Menu">
+        <ContentPage Title="Menu" Style="{DynamicResource MenuLateral}">
             <StackLayout>
-                <Button Text="Início" Clicked="AbrirPagina01" />
-                <Button Text="A Vibe" Clicked="AbrirPagina02"/>
-                <Button Text="Transformação Digital" Clicked="AbrirPagina03"/>
-                <Button Text="Soluções Corporativas" Clicked="AbrirPagina04"/>
-                <Button Text="Cases de Sucesso" Clicked="AbrirPagina05"/>
-                <Button Text="Fale com a Gente" Clicked="AbrirPagina06"/>
+                <CollectionView x:Name="MenuColecao" IsGrouped="True">
+                    <CollectionView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Titulo}" FontFamily="RubikBold" Style="{DynamicResource MenuLateralLabel}"/>
+                                
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.GroupHeaderTemplate>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Nome}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </StackLayout>
         </ContentPage>
     </FlyoutPage.Flyout>
@@ -21,7 +32,7 @@
     <FlyoutPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <local:Pagina01/>
+                <local:NossaVibe/>
             </x:Arguments>
         </NavigationPage>
     </FlyoutPage.Detail>
