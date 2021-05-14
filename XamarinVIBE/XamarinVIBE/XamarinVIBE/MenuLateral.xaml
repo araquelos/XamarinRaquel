@@ -2,30 +2,42 @@
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:XamarinVIBE.Paginas.Institucional"
+                  xmlns:viewmodel="clr-namespace:XamarinVIBE.ViewModels"
                   x:Class="XamarinVIBE.MenuLateral">
 
     <!-- Menu -->
     <FlyoutPage.Flyout>
         <ContentPage Title="Menu" Style="{DynamicResource MenuLateral}">
-            <StackLayout>
-                <CollectionView x:Name="MenuColecao" IsGrouped="True">
-                    <CollectionView.GroupHeaderTemplate>
-                        <DataTemplate>
-                            <StackLayout Padding="10">
-                                <Label Text="{Binding Titulo}" FontFamily="RubikBold" Style="{DynamicResource MenuLateralLabel}"/>
-                                
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.GroupHeaderTemplate>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Padding="10">
-                                <Label Text="{Binding Nome}"/>
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </StackLayout>
+            <ContentPage.BindingContext>
+                <viewmodel:MenuViewModel/>
+            </ContentPage.BindingContext>
+            <CollectionView ItemsSource="{Binding MenuItens}" IsGrouped="True">
+                <CollectionView.Header>
+                    <StackLayout BackgroundColor="red">
+                        <Image  Style="{DynamicResource Logomarca}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </CollectionView.Header>
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Titulo}" FontFamily="RubikBold" Padding="10" Style="{DynamicResource MenuLateralLabel}"/>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="25, 5, 10, 5">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="AbrirPagina" CommandParameter="{Binding .}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="{Binding Nome}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.Footer>
+                    <StackLayout Padding="10">
+                        <Button Text="FALE COM A GENTE"/>
+                    </StackLayout>
+                </CollectionView.Footer>
+            </CollectionView>
         </ContentPage>
     </FlyoutPage.Flyout>
     <!-- Conteúdo -->

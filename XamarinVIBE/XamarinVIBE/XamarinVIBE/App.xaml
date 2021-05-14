@@ -4,45 +4,69 @@
              x:Class="XamarinVIBE.App">
     <Application.Resources>
         <ResourceDictionary>
+
             <!-- Cores Genéricas -->
             <Color x:Key="AzulEscuro">#0016a6</Color>
             <Color x:Key="AzulClaro">#45ffda</Color>
             <Color x:Key="CinzaEscuro">#1b1b1b</Color>
             <Color x:Key="Branco">#ffffff</Color>
-            
+
             <!-- Label Genérica -->
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="Rubik"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="TextColor" Value="{AppThemeBinding 
+                    Light={StaticResource CinzaEscuro}, 
+                    Dark={StaticResource Branco}}" />
             </Style>
 
-            <!-- Menu Lateral -->
+            <!-- ////////// MENU LATERAL ////////// -->
+            
+            <!-- Logomarca -->
+            <Style x:Key="Logomarca" TargetType="Image">
+                <Setter Property="Source">
+                    <Setter.Value>
+                        <AppThemeBinding 
+                            Light="{OnPlatform Android=Logo.png, iOS=Logo.png, UWP='Imagens/Logo.png'}" 
+                            Dark="{OnPlatform Android=Logo.png, iOS=Logo.png, UWP='Imagens/Logo.png'}">
+                        </AppThemeBinding>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Fundo do Menu -->
             <Color x:Key="MenuLateralBgColorLight">#FFFFFF</Color>
             <Color x:Key="MenuLateralBgColorDark">#1B1B1B</Color>
-            <Color x:Key="MenuLateralTxColorLight">#0016A6</Color>
-            <Color x:Key="MenuLateralTxColorDark">#0016A6</Color>
-
+            
             <Style x:Key="MenuLateral" TargetType="ContentPage">
                 <Setter Property="BackgroundColor" Value="{AppThemeBinding 
                     Light={StaticResource MenuLateralBgColorLight}, 
                     Dark={StaticResource MenuLateralBgColorDark}}" />
             </Style>
+            
+            <!-- Label do Menu -->
+            <Color x:Key="MenuLateralTxColorLight">#0016A6</Color>
+            <Color x:Key="MenuLateralTxColorDark">#45ffda</Color>
+            
             <Style x:Key="MenuLateralLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{AppThemeBinding 
                     Light={StaticResource MenuLateralTxColorLight}, 
                     Dark={StaticResource MenuLateralTxColorDark}}" />
+                <Setter Property="FontSize" Value="16"/>
             </Style>
 
-            <!-- ///////////////////////////////////////////////-->
-            
-            <Color x:Key="PageBackgroundColorLight">red</Color>
-            <Color x:Key="PageBackgroundColorDark">red</Color>
-            <Color x:Key="BackgroundColorLight">purple</Color>
-            <Color x:Key="BackgroundColorDark">purple</Color>
-            <Color x:Key="TextColorLight">green</Color>
-            <Color x:Key="TextColorDark">green</Color>
+            <!-- ////////// PÁGINA ////////// -->
 
+            <!-- Fundo da Página -->
+            <Color x:Key="PageBackgroundColorLight">#FFFFFF</Color>
+            <Color x:Key="PageBackgroundColorDark">#1b1b1b</Color>
+            <!-- Barra de Título -->
+            <Color x:Key="BackgroundColorLight">#FFFFFF</Color>
+            <Color x:Key="BackgroundColorDark">#1B1B1B</Color>
+            <!-- Icone de Menu -->
+            <Color x:Key="TextColorLight">#0016a6</Color>
+            <Color x:Key="TextColorDark">#45ffda</Color>
 
-            <!-- Página -->
             <Style TargetType="Page" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="{AppThemeBinding 
                     Light={StaticResource PageBackgroundColorLight}, 
@@ -56,8 +80,6 @@
                     Light={StaticResource TextColorLight}, 
                     Dark={StaticResource TextColorDark}}" />
             </Style>
-
-
 
             <!-- Estilo Genéricos -->
             <Style TargetType="Button">

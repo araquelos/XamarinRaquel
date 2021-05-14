@@ -16,4 +16,8 @@
 1. App.xaml.cs
 - Setar a página inicial ou o menu lateral (se houver).
 - Carregar itens do menu lateral (coleção de páginas).
-2. App.xaml -> Setar os temas claro e escuro, e estilos de labels e botões. 
+2. App.xaml
+- Temas claro e escuro.
+- Estilos de labels e botões. 
+3. AssemblyInfo.cs
+- Fontes: Rubik e FontAwesome.
